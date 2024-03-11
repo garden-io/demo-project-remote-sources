@@ -11,7 +11,7 @@ spec:
       kind: Service
       metadata:
         name: backend
-        namespace: local-mode-k8s-default
+#        namespace: local-mode-k8s-default
         labels:
           app: backend
       spec:
@@ -26,7 +26,7 @@ spec:
       apiVersion: apps/v1
       metadata:
         name: backend-deployment
-        namespace: local-mode-k8s-default
+#        namespace: local-mode-k8s-default
         labels:
           app: backend
       spec:
@@ -49,7 +49,7 @@ spec:
       kind: Ingress
       metadata:
         name: backend-0
-        namespace: local-mode-k8s-default
+#        namespace: local-mode-k8s-default
         labels:
           app: backend
       spec:
