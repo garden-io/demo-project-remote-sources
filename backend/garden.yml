@@ -6,6 +6,11 @@ dependencies:
   - build.backend-image
 
 spec:
+  portForwards:
+    - name: test-fwd
+      targetPort: 80
+      localPort: 8085
+      resource: Service/backend
   manifests:
     - apiVersion: v1
       kind: Service
