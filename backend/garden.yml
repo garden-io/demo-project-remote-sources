@@ -21,7 +21,7 @@ manifests:
     kind: Service
     metadata:
       name: backend
-      namespace: local-mode-k8s-default
+      namespace: demo-project-remote-sources-default
       labels:
         app: backend
     spec:
@@ -36,7 +36,7 @@ manifests:
     apiVersion: apps/v1
     metadata:
       name: backend-deployment
-      namespace: local-mode-k8s-default
+      namespace: demo-project-remote-sources-default
       labels:
         app: backend
     spec:
@@ -59,7 +59,7 @@ manifests:
     kind: Ingress
     metadata:
       name: backend-0
-      namespace: local-mode-k8s-default
+      namespace: demo-project-remote-sources-default
       labels:
         app: backend
     spec:
